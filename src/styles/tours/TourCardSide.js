@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import DefaultTheme from "../utility/themes";
 import { black } from "../utility/variables";
+import { fade } from "../utility/functions";
 
 const TourCardSide = styled.div`
   overflow: hidden;
@@ -16,7 +17,7 @@ const TourCardSide = styled.div`
   top: 0;
   left: 0;
   transition: all 0.8s ease;
-  box-shadow: 1rem 1.5rem 4rem ${black};
+  box-shadow: 1rem 1.5rem 4rem ${fade(black, 0.5)};
 `;
 
 TourCardSide.defaultProps = {

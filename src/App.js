@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Header, About, Feature, Tours } from "./components";
+import { Header, About, Feature, Tours, Stories } from "./components";
 import {
   GreenTheme,
   DarkTheme,
@@ -17,28 +17,23 @@ globalStyle(MainTheme);
 class App extends Component {
   render() {
     return (
-      <div className="Container">
-        <ThemeProvider theme={MainTheme}>
+      <ThemeProvider theme={MainTheme}>
+        <div className="Container">
           <Header
             main="Outdoors"
             sub="is where life happens"
             imgsrc="/img/logo-white.png"
             alt="logo"
           />
-        </ThemeProvider>
-        <main>
-          <ThemeProvider theme={MainTheme}>
+          <main>
             <About main="Exciting tours for adventurous people" />
-          </ThemeProvider>
-          <ThemeProvider theme={MainTheme}>
             <Feature />
-          </ThemeProvider>
-          <ThemeProvider theme={MainTheme}>
             <Tours />
-          </ThemeProvider>
-        </main>
-        <footer>footer</footer>
-      </div>
+            <Stories />
+          </main>
+          <footer>footer</footer>
+        </div>
+      </ThemeProvider>
     );
   }
 }

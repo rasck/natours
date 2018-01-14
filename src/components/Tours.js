@@ -89,7 +89,6 @@ const Tours = () => (
             <TourCardDetail>Difficulty: medium</TourCardDetail>
           </TourCardSide>
           <TourBackSide color={green}>
-            {" "}
             <BackSideContainer>
               <PriceBox>
                 <TourCardSubHeadline>only</TourCardSubHeadline>
@@ -117,7 +116,6 @@ const Tours = () => (
             <TourCardDetail>Difficulty: hard</TourCardDetail>
           </TourCardSide>
           <TourBackSide color={blue}>
-            {" "}
             <BackSideContainer>
               <PriceBox>
                 <TourCardSubHeadline>only</TourCardSubHeadline>
