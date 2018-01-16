@@ -15,6 +15,7 @@ import {
   FormRadioStyle
 } from "../styles";
 import { mediumFont, marginBottomSmall } from "../styles/utility/variables";
+import { FormButton } from "../styles/common/FormComponent";
 
 export const Booking = () => (
   <BookingContainer>
@@ -52,18 +53,21 @@ export const Booking = () => (
               {/* the html attribute name="tourSize" make the radiobuttons work together */}
               <FormRadioButtonGroup>
                 <FormRadioButton type="radio" id="small" name="tourSize" />
-                <FormRadioButtonLabel for="small">
+                <FormRadioButtonLabel htmlFor="small">
                   <FormRadioStyle />
                   Small tour group
                 </FormRadioButtonLabel>
               </FormRadioButtonGroup>
               <FormRadioButtonGroup>
                 <FormRadioButton type="radio" id="large" name="tourSize" />
-                <FormRadioButtonLabel for="large">
+                <FormRadioButtonLabel htmlFor="large">
                   <FormRadioStyle />
                   Large tour group
                 </FormRadioButtonLabel>
               </FormRadioButtonGroup>
+            </FormGroup>
+            <FormGroup>
+              <FormButton>Next &rarr;</FormButton>
             </FormGroup>
           </FormContainer>
         </BookingFormContainer>

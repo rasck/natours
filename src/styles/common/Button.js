@@ -12,6 +12,7 @@ font-size: ${defaultFontSize};
 position: relative;`;
 
 const Button = styled.a`
+  &,
   &:visited,
   &:link {
     ${linkMixin};
