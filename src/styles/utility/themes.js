@@ -6,7 +6,8 @@ export const GreenTheme = {
   SecondaryText: "#777",
   SecondaryBackground: "#fff",
   TertiaryBackground: "#f7f7f7",
-  BackgroundColor: "#fff"
+  BackgroundColor: "#fff",
+  Faulty: "#ff7730"
 };
 
 export const DarkTheme = {
@@ -17,7 +18,8 @@ export const DarkTheme = {
   SecondaryText: "#777",
   SecondaryBackground: "#fff",
   TertiaryBackground: "#f7f7f7",
-  BackgroundColor: "#212121"
+  BackgroundColor: "#212121",
+  Faulty: "#ff7730"
 };
 
 export const BlueTheme = {
@@ -28,7 +30,8 @@ export const BlueTheme = {
   SecondaryText: "#777",
   SecondaryBackground: "#fff",
   TertiaryBackground: "#f7f7f7",
-  BackgroundColor: "#fff"
+  BackgroundColor: "#fff",
+  Faulty: "#ff7730"
 };
 
 export const OrangeTheme = {
@@ -39,7 +42,8 @@ export const OrangeTheme = {
   SecondaryText: "#fff",
   SecondaryBackground: "#212121",
   TertiaryBackground: "#004D40",
-  BackgroundColor: "#212121"
+  BackgroundColor: "#212121",
+  Faulty: "#8b0000"
 };
 
 const DefaultTheme = GreenTheme;

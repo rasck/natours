@@ -5,7 +5,8 @@ import { fade } from "../utility/functions";
 
 const SecondaryHeadline = styled.h2`
   display: inline-block;
-  font-size: 3.5rem;
+  font-size: ${props => props.fontSize || "3.5rem"};
+  margin-bottom: ${props => props.bottomMargin || 0};
   font-weight: 700;
   text-transform: uppercase;
   background-image: linear-gradient(

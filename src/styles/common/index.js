@@ -5,3 +5,4 @@ export * from "./CenterContainer";
 export * from "./SecondaryHeadline";
 export * from "./TertiaryHeadLine";
 export * from "./PrimaryParagraph";
+export * from "./FormComponent";

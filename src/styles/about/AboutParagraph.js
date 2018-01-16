@@ -6,7 +6,7 @@ const AboutParagraph = styled.p`
   padding: 2rem 0;
 
   &:not(:last-child) {
-    margin-bottom: ${marginBottomSmall}rem;
+    margin-bottom: ${marginBottomSmall};
   }
 `;
 

@@ -5,3 +5,4 @@ export * from "./grid";
 export * from "./features";
 export * from "./tours";
 export * from "./stories";
+export * from "./booking";
