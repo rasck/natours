@@ -1,5 +1,13 @@
 import React, { Component } from "react";
-import { Header, About, Feature, Tours, Stories, Booking } from "./components";
+import {
+  Header,
+  About,
+  Feature,
+  Tours,
+  Stories,
+  Booking,
+  Footer
+} from "./components";
 import {
   GreenTheme,
   DarkTheme,
@@ -32,7 +40,7 @@ class App extends Component {
             <Stories />
             <Booking />
           </main>
-          <footer>footer</footer>
+          <Footer />
         </div>
       </ThemeProvider>
     );

@@ -1,9 +1,8 @@
-import styled from "styled-components";
 import { ThemeButton } from "../Button";
+// convert the html anchor element to a button element
+const Button = ThemeButton.withComponent("button");
 
-const Btn = ThemeButton.withComponent("button");
-
-var FormButton = Btn.extend`
+const FormButton = Button.extend`
   border: none;
   cursor: pointer;
   &:focus {

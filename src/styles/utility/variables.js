@@ -7,7 +7,10 @@ export const gutterHorizontal = "6rem";
 // Colors
 export const black = "#212121";
 export const white = "#fff";
+export const greyLight = "#f7f7f7";
 export const greyDark = "#999";
+export const dark = "#333";
+export const green = "#55c57a";
 
 // Font Sizes
 export const defaultFontSize = "1.6rem";

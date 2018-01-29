@@ -4,3 +4,4 @@ export * from "./Feature";
 export * from "./Tours";
 export * from "./Stories";
 export * from "./Booking";
+export * from "./Footer";
