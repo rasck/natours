@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   Row,
   Column,
@@ -38,7 +38,7 @@ const blue = {
 };
 
 const Tours = () => (
-  <TourContainer>
+  <TourContainer id="section-tours">
     <Row>
       <CenterText>
         <SecondaryHeadline>Most popular tours</SecondaryHeadline>
@@ -67,7 +67,7 @@ const Tours = () => (
                 <TourCardSubHeadline>only</TourCardSubHeadline>
                 <TourCardPrice>$297</TourCardPrice>
               </PriceBox>
-              <WhiteButton href="#">Book now!</WhiteButton>
+              <WhiteButton href="#popup">Book now!</WhiteButton>
             </BackSideContainer>
           </TourBackSide>
         </TourCard>
@@ -94,7 +94,7 @@ const Tours = () => (
                 <TourCardSubHeadline>only</TourCardSubHeadline>
                 <TourCardPrice>$497</TourCardPrice>
               </PriceBox>
-              <WhiteButton href="#">Book now!</WhiteButton>
+              <WhiteButton href="#popup">Book now!</WhiteButton>
             </BackSideContainer>
           </TourBackSide>
         </TourCard>
@@ -121,7 +121,7 @@ const Tours = () => (
                 <TourCardSubHeadline>only</TourCardSubHeadline>
                 <TourCardPrice>$600</TourCardPrice>
               </PriceBox>
-              <WhiteButton href="#">Book now!</WhiteButton>
+              <WhiteButton href="#popup">Book now!</WhiteButton>
             </BackSideContainer>
           </TourBackSide>
         </TourCard>

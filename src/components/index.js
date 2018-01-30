@@ -5,3 +5,5 @@ export * from "./Tours";
 export * from "./Stories";
 export * from "./Booking";
 export * from "./Footer";
+export * from "./Navigation";
+export * from "./PopUp";

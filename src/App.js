@@ -6,7 +6,9 @@ import {
   Tours,
   Stories,
   Booking,
-  Footer
+  Footer,
+  Navigation,
+  PopUp
 } from "./components";
 import {
   GreenTheme,
@@ -26,7 +28,9 @@ class App extends Component {
   render() {
     return (
       <ThemeProvider theme={MainTheme}>
-        <div className="Container">
+        <div>
+          <Navigation />
+          <PopUp />
           <Header
             main="Outdoors"
             sub="is where life happens"

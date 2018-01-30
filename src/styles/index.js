@@ -7,3 +7,5 @@ export * from "./tours";
 export * from "./stories";
 export * from "./booking";
 export * from "./footer";
+export * from "./navigation";
+export * from "./popup";

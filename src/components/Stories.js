@@ -23,7 +23,7 @@ const Stories = () => (
         <video
           className="video-content"
           muted="true"
-          autoplay="true"
+          autoPlay="true"
           loop="true"
         >
           <source src="img/video.mp4" type="video/mp4" />
