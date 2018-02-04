@@ -8,7 +8,7 @@ const FormInput = styled.input`
   padding: 1.5rem 2rem;
   font-family: inherit;
   border-radius: 2px;
-  background-color: ${fade(white, 0.2)};
+  background-color: ${fade(white,+ 0.2)};
   border: none;
   transition: all 0.4s ease;
   border-bottom: 3px solid transparent;

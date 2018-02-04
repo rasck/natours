@@ -7,6 +7,7 @@ const HeaderButton = WhiteButton.extend`
   animation-duration: 0.7s;
   animation-timing-function: ease-out;
   animation-delay: 1s;
+  /* The elements start position will the same as the anitmations start position */
   animation-fill-mode: backwards;
 `;
 

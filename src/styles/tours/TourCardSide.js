@@ -8,9 +8,9 @@ const TourCardSide = styled.div`
   backface-visibility: hidden;
   padding-bottom: 2em;
   height: 45rem;
+  width: 100%;
   text-align: center;
   border-radius: 5px;
-  width: 25vw;
   display: inline-block;
   background-color: ${props => props.theme.SecondaryBackground};
   position: absolute;

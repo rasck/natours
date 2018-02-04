@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import DefaultTheme from "../utility/themes";
 import { fade } from "../utility/functions";
+import { media } from "../utility/mixins";
 
 const HeaderContainer = styled.header`
   height: 95vh;
@@ -14,6 +15,10 @@ const HeaderContainer = styled.header`
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
+  ${media.tabPort`
+  height: 65vh;
+  clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+  `};
 `;
 
 // We're passing a default theme for HeaderContainer that aren't wrapped in the ThemeProvider

@@ -2,8 +2,9 @@ import styled from "styled-components";
 import {
   gridWidth,
   gutterHorizontal,
-  gutterVertical
+  gutterVerticalSmall
 } from "../utility/variables";
+import { media } from "../utility/mixins";
 
 const colCalc = (span, columns) => {
   const numberOfGutters = Number(columns) - 1;
@@ -28,4 +29,9 @@ export const Column = styled.div`
     margin-right: ${gutterHorizontal};
   }
   ${props => colCalc(props.span, props.columns)};
+  ${media.tabPort`
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: ${gutterVerticalSmall};
+  `};
 `;

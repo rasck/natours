@@ -2,6 +2,7 @@ import styled from "styled-components";
 import DefaultTheme from "../utility/themes";
 import { black, marginBottomBig } from "../utility/variables";
 import { fade } from "../utility/functions";
+import { media } from "../utility/mixins";
 
 const SecondaryHeadline = styled.h2`
   display: inline-block;
@@ -26,6 +27,12 @@ const SecondaryHeadline = styled.h2`
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem ${fade(black, 0.8)};
   }
+  ${media.tabPort`
+  font-size: 3rem;
+  `};
+  ${media.phone`
+  font-size: 2.5rem;
+  `};
 `;
 
 SecondaryHeadline.defaultProps = {

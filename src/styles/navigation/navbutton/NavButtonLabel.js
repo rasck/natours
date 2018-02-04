@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { fade } from "../../utility/functions";
 import { black } from "../../utility/variables";
 import { NavIcon } from "./NavIcon";
+import { media } from "../../utility/mixins";
 
 const NavButtonLabel = styled.label`
   background-color: ${props => props.theme.BackgroundColor};
@@ -25,6 +26,10 @@ const NavButtonLabel = styled.label`
       }
     }
   }
+  ${media.tabPort`
+    top: 3rem;
+    right: 3rem;
+  `};
 `;
 
 export { NavButtonLabel };

@@ -2,9 +2,10 @@ import styled from "styled-components";
 import {
   gridWidth,
   gutterHorizontal,
-  gutterVertical
+  gutterVertical,
+  gutterVerticalSmall
 } from "../utility/variables";
-import { clearFix } from "../utility/mixins";
+import { clearFix, media } from "../utility/mixins";
 
 const Row = styled.div`
   max-width: ${gridWidth};
@@ -12,7 +13,14 @@ const Row = styled.div`
   &:not(:last-child) {
     /* set margin bottom on everything but the last child */
     margin-bottom: ${gutterVertical};
+    ${media.tabPort`
+      margin-bottom: ${gutterVerticalSmall};
+  `};
   }
+  ${media.tabPort`
+      max-width: 50rem;
+      padding: 0 3rem;
+  `};
   /* fix our floats  */
   ${clearFix};
 `;

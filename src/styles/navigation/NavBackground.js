@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import DefaultTheme from "../utility/themes";
 import { gradientWrapper } from "../utility/functions";
+import { media } from "../utility/mixins";
 
 const NavBackground = styled.div`
   /* Z-index only works on elements that has their positions defined */
@@ -22,6 +23,10 @@ const NavBackground = styled.div`
     )};
   /* http://easings.net/da#easeInOutQuint*/
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  ${media.tabPort`
+  top: 3.25rem;
+  right: 3.25rem;
+`};
 `;
 
 NavBackground.defaultProps = {

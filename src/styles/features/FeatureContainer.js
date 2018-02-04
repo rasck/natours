@@ -2,6 +2,7 @@ import styled from "styled-components";
 import DefaultTheme from "../utility/themes";
 import { defaultFontSize, black } from "../utility/variables";
 import { fade } from "../utility/functions";
+import { media } from "../utility/mixins";
 
 const FeatureContainer = styled.section`
   padding: 20rem 0;
@@ -20,6 +21,10 @@ const FeatureContainer = styled.section`
     /* select all (*) child (>) elements */
     transform: skewY(7deg);
   }
+  ${media.tabPort`
+    padding: 5rem 0;
+  
+  `};
 `;
 
 FeatureContainer.defaultProps = {
