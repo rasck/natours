@@ -11,6 +11,7 @@ const NavButtonCheckBox = styled.input`
     transform: scale(80);
   }
   &:checked ~ ${Nav} {
+    transform: translateX(0);
     opacity: 1;
     width: 100%;
   }

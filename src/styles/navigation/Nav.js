@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Nav = styled.nav`
+  transform: translateX(-100rem);
   height: 100vh;
   position: fixed;
   left: 0;
