@@ -10,7 +10,7 @@ const NavIcon = styled.span`
     display: inline-block;
     width: 3rem;
     height: 2px;
-    background-color: ${dark};
+    background-color: ${props => props.theme.Dark};
   }
 
   &::after,
